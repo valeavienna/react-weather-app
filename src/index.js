@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Today from "./today";
 import Search from "./search";
+import Footer from "./footer";
 
 import "./styles.css";
 
@@ -12,6 +13,7 @@ function App() {
       <h1>Weather Forecast</h1>
       <Today />
       <Search />
+      <Footer />
     </div>
   );
 }

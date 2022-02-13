@@ -13,7 +13,7 @@ function Search() {
           aria-label="Search"
         />
         <input className="submit" type="submit" value="Search 🌍" />
-        <input className="local" type="submit" value="Local Weather 🚩" />
+        <input className="local" type="submit" value="Local Weather 🚩" />{" "}
       </form>
     </div>
   );
