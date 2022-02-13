@@ -1,0 +1,75 @@
+.units {
+  font-size: 30px;
+  position: relative;
+  top: -50emptyemppx;
+}
+
+a {
+  color: #bdf1db;
+}
+
+a.non-active {
+  cursor: default;
+  color: white;
+  text-decoration: none;
+}
+
+.icon-top {
+  text-align: center;
+}
+input.submit {
+  margin-right: 8px;
+}
+
+.row.container-weather-today {
+  padding-left: 97px;
+  padding-right: 97px;
+}
+
+.container-today {
+  padding: 0;
+}
+
+.weather-today {
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
+  border: none;
+}
+
+.weather-today-icon {
+  background: none;
+  display: flex;
+}
+
+img.icon-today {
+  width: 200px;
+  margin: auto;
+  display: block;
+}
+
+.data-today {
+  margin-left: 0;
+  padding-left: 0;
+}
+.day-temp {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.wind-description {
+  padding-top: 70px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.description::first-letter {
+  text-transform: capitalize;
+}
+hr {
+  color: white;
+  width: 95%;
+}
+
+div.col {
+  padding: 0;
+}
