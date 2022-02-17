@@ -1,6 +1,4 @@
 import React from "react";
-import Search from "./search";
-import Today from "./today";
 
 function Date(props) {
   let days = [

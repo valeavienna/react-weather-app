@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Today from "./today";
 
 function Temperature(props) {
   let [unit, setUnit] = useState("celsius");
@@ -14,7 +13,7 @@ function Temperature(props) {
     setUnit("celsius");
   }
 
-  if (unit == "celsius") {
+  if (unit === "celsius") {
     return (
       <div className="temperature">
         <span className="temp">{props.temp}</span>

@@ -1,5 +1,4 @@
 import React from "react";
-import Search from "./search";
 import Date from "./date";
 import Temperature from "./temperature";
 import "./today.css";
