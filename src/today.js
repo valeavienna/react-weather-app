@@ -1,8 +1,11 @@
 import React from "react";
-
+import Search from "./search";
+import Date from "./date";
+import Temperature from "./temperature";
 import "./today.css";
 
-function Today() {
+function Today(props) {
+  console.log(props.weather.date);
   return (
     <div className="today">
       {" "}
@@ -10,36 +13,28 @@ function Today() {
         <div className="col-6 container-today">
           <div className="card weather-today">
             <div className="card-body today">
-              <h3 className="cityNow">Vienna</h3>
-              <h4 className="header">Weather Report</h4>
+              <h3 className="cityNow">{props.weather.city}</h3>
+              <h3 className="date">
+                <Date date={props.weather.date} />
+              </h3>
               <hr />
               <div className="row container data-today">
                 <div className="col-6 day-temp">
                   <h5>Today</h5>
                   <h6>
-                    <span className="temp">5</span>
-                    <span className="units">
-                      °
-                      <a href="/" className="celsius non-active">
-                        C
-                      </a>
-                      /
-                      <a href="/" className="fahrenheit">
-                        F
-                      </a>
-                    </span>
+                    <Temperature temp={props.weather.temp} />
                   </h6>
                 </div>
                 <div className="col-6 wind-description">
-                  <h4 className="description">Sunny</h4>
-                  <h4 className="wind">Wind: 24km/h</h4>
+                  <h4 className="description">{props.weather.description}</h4>
+                  <h4 className="wind">Wind: {props.weather.wind}km/h</h4>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="col-6 icon-top weather-today-icon">
-          <img className="icon-today" src="" alt="" />
+          <img className="icon-today" src={props.weather.icon} alt="" />
         </div>
       </div>
     </div>

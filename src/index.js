@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Today from "./today";
 import Search from "./search";
 import Footer from "./footer";
 
@@ -11,8 +10,7 @@ function App() {
     <div className="App container">
       {" "}
       <h1>Weather Forecast</h1>
-      <Today />
-      <Search />
+      <Search defaultCity={"Port Louis"} />
       <Footer />
     </div>
   );
