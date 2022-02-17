@@ -24,6 +24,18 @@ function Search(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function getPosition(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiUrlLocal = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrlLocal).then(handleResponse);
+  }
+
+  function local(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(getPosition);
+  }
+
   function handleResponse(response) {
     setWeather({
       ready: true,
@@ -54,7 +66,8 @@ function Search(props) {
             className="local"
             type="submit"
             value="Local Weather 🚩"
-          />{" "}
+            onClick={local}
+          />
         </form>
       </div>
     );
