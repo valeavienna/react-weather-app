@@ -8,8 +8,9 @@ function Footer() {
         <a
           href="https://github.com/valeavienna/react-weather-app"
           target="_blank"
+          rel="noreferrer"
         >
-          Coded by Valeria Corso
+          <i class="fa-brands fa-github white"></i> Coded by Valeria Corso
         </a>
       </div>
     </div>
