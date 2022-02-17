@@ -4,7 +4,6 @@ import Temperature from "./temperature";
 import "./today.css";
 
 function Today(props) {
-  console.log(props.weather.date);
   return (
     <div className="today">
       {" "}

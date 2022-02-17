@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Today from "./today";
+import Forecast from "./forecast";
 import "./search.css";
 
 function Search(props) {
   let [weather, setWeather] = useState({ ready: false });
   let [city, setCity] = useState(props.defaultCity);
-  console.log(props.defaultCity);
 
   let apiKey = "559b6f96538ec8d21d1bda0faf9f705f";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -39,6 +39,7 @@ function Search(props) {
   function handleResponse(response) {
     setWeather({
       ready: true,
+      coordinates: response.data.coord,
       temp: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
       wind: Math.round(response.data.wind.speed),
@@ -53,6 +54,7 @@ function Search(props) {
     return (
       <div className="Search">
         <Today weather={weather} />
+        <Forecast coordinates={weather.coordinates} />
         <form className="d-flex" onSubmit={handleSubmit}>
           <input
             className="form-control me-2 newCity"
