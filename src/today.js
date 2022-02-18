@@ -2,7 +2,7 @@ import React from "react";
 import Date from "./date";
 import Temperature from "./temperature";
 import "./today.css";
-import "./styles.css";
+import "./index.css";
 
 function Today(props) {
   return (
@@ -12,12 +12,14 @@ function Today(props) {
         <div className="col-md-8 col-lg-6 container-today">
           <div className="card weather-today">
             <div className="card-body today">
-              <h3 className="cityNow">{props.weather.city}</h3>
+              <h3 className="cityNow">
+                <strong>{props.weather.city}</strong>
+              </h3>
+              <hr />
               <h3 className="date">
                 <Date date={props.weather.date} />
               </h3>
-              <hr />
-              <h5>Today</h5>
+
               <div className="row container data-today">
                 <div className="col-sm-6 day-temp">
                   <h6>
@@ -27,6 +29,7 @@ function Today(props) {
                 <div className="col-sm-6 wind-description">
                   <h4 className="description">{props.weather.description}</h4>
                   <h4 className="wind">Wind: {props.weather.wind}km/h</h4>
+                  <h4>Humidity: {props.weather.humidity} %</h4>
                 </div>
               </div>
             </div>

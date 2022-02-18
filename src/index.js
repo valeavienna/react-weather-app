@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Search from "./search";
 import Footer from "./footer";
 
-import "./styles.css";
+import "./index.css";
 
 function App() {
   return (

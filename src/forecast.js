@@ -11,6 +11,7 @@ function Forecast(props) {
   function handleResponse(response) {
     setForecast(response.data.daily);
     setLoaded(true);
+    console.log(forecast);
   }
 
   if (loaded) {
