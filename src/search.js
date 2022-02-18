@@ -55,7 +55,7 @@ function Search(props) {
       <div className="Search">
         <Today weather={weather} />
         <Forecast coordinates={weather.coordinates} />
-        <form className="d-flex" onSubmit={handleSubmit}>
+        <form className="d-block  d-md-flex" onSubmit={handleSubmit}>
           <input
             className="form-control me-2 newCity"
             type="search"
@@ -63,6 +63,7 @@ function Search(props) {
             aria-label="Search"
             onChange={updateCity}
           />
+
           <input className="submit" type="submit" value="Search 🌍" />
           <input
             className="local"

@@ -12,3 +12,8 @@ form {
 .form-control::placeholder {
   color: darkgray;
 }
+
+input {
+  margin-top: 5px;
+  padding: 5px;
+}
