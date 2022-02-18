@@ -18,7 +18,7 @@ function Forecast(props) {
       <div className="Forecast container next-days-forecast">
         <div className="row">
           {forecast.map(function (dailyForecast, index) {
-            if (index < 6) {
+            if (index < 7 && index > 0) {
               return <Forecastday data={dailyForecast} />;
             }
           })}
