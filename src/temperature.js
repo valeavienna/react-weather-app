@@ -28,7 +28,7 @@ function Temperature(props) {
       </div>
     );
   } else {
-    let tempFahrenheit = (props.temp * 9) / 5 + 32;
+    let tempFahrenheit = Math.round((props.temp * 9) / 5 + 32);
     return (
       <div className="temperature">
         <span className="temp">{tempFahrenheit}</span>

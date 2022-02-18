@@ -3,6 +3,8 @@
   text-align: center;
   border: none;
   background: transparent;
+  padding: none;
+  max-width: 1300px;
 }
 
 .col-lg-2 {
@@ -11,12 +13,12 @@
   border-right-color: rgba(255, 255, 255, 0.2);
   padding: 20px 0;
 }
-.card-body.forecast-border {
+/* .card-body.forecast-border {
   border-right: solid 1px;
   border-right-color: rgba(255, 255, 255, 0.2);
   padding: 0;
   margin: 20px 0 20px;
-}
+} */
 
 .forecast-icon {
   height: 100px;
@@ -24,4 +26,11 @@
 }
 .min-forecast {
   color: rgba(256, 256, 256, 0.5);
+}
+
+@media (max-width: 992px) {
+  .col-lg-2 {
+    background-color: transparent;
+    border-right: none;
+  }
 }

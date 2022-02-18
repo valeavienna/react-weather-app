@@ -1,3 +1,7 @@
+h5 {
+  padding-left: 0;
+}
+
 .units {
   font-size: 30px;
   position: relative;
@@ -20,11 +24,6 @@ input.submit {
   margin-right: 8px;
 }
 
-.row.container-weather-today {
-  padding-left: 97px;
-  padding-right: 97px;
-}
-
 .container-today {
   padding: 0;
 }
@@ -33,6 +32,10 @@ input.submit {
   background: rgba(0, 0, 0, 0.2);
   margin-top: 25px;
   border: none;
+}
+
+.day-temp {
+  padding-left: 0;
 }
 
 .weather-today-icon {
@@ -66,4 +69,8 @@ hr {
 
 div.col {
   padding: 0;
+}
+
+.container-weather-today {
+  margin: 0;
 }

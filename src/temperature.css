@@ -1,5 +1,20 @@
+@media (max-width: 575px) {
+  .data-today {
+    padding: 0;
+  }
+  .units {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 1136px) {
   .temp {
-    font-size: 60px;
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1137px) {
+  .temp {
+    font-size: 100px;
   }
 }

@@ -20,7 +20,7 @@ function Forecastday(props) {
   }
 
   return (
-    <div className="col-md-4 col-lg-2 rounded">
+    <div className="col-sm-4 col-lg-2 rounded">
       <h3 className="weekday">{day()}</h3>
       <img className="forecast-icon" src={iconUrl} alt=""></img>
       <h4 className="temp-forecast">
