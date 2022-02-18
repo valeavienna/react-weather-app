@@ -7,6 +7,10 @@ form {
   border-color: white;
 }
 
+input.submit {
+  margin-right: 8px;
+}
+
 .form-control::placeholder {
   color: darkgray;
 }

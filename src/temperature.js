@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./temperature.css";
+import "./css/temperature.css";
 
 function Temperature(props) {
   let [unit, setUnit] = useState("celsius");

@@ -1,8 +1,7 @@
 import React from "react";
-import "./forecast.css";
+import "./css/forecastday.css";
 
 function Forecastday(props) {
-  console.log(props);
   let iconUrl = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
   function day() {
     let date = new Date(props.data.dt * 1000);
@@ -22,9 +21,9 @@ function Forecastday(props) {
 
   return (
     <div className="col-sm-4 col-lg-2 rounded">
-      <h3 className="weekday">{day()}</h3>
+      <h3>{day()}</h3>
       <img className="forecast-icon" src={iconUrl} alt=""></img>
-      <h4 className="temp-forecast">
+      <h4>
         <span className="max-forecast">
           {Math.round(props.data.temp.max)}°{" "}
         </span>

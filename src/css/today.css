@@ -1,0 +1,25 @@
+.weather-today {
+  background: rgba(0, 0, 0, 0.2);
+  margin-top: 25px;
+  border: none;
+}
+
+.description::first-letter {
+  text-transform: capitalize;
+}
+hr {
+  color: white;
+  width: 95%;
+}
+
+.weather-today-icon {
+  background: none;
+  display: flex;
+  text-align: center;
+}
+
+img.icon-today {
+  width: 200px;
+  margin: auto;
+  display: block;
+}

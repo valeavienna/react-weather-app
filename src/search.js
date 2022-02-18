@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Today from "./today";
 import Forecast from "./forecast";
-import "./search.css";
+import "./css/search.css";
 
 function Search(props) {
   let [weather, setWeather] = useState({ ready: false });
