@@ -23,6 +23,8 @@ function Forecast(props) {
           {forecast.map(function (dailyForecast, index) {
             if (index < 7 && index > 0) {
               return <Forecastday data={dailyForecast} />;
+            } else {
+              return null;
             }
           })}
         </div>
